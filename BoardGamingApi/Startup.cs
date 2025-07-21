@@ -53,7 +53,7 @@ namespace BoardGamingApi
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Board Gaming API v1");
-                c.RoutePrefix = string.Empty; // Optional: serve Swagger UI at application root
+                c.RoutePrefix = "swagger"; // Optional: serve Swagger UI at application root
             });
 
             app.UseRouting();
